@@ -1,0 +1,130 @@
+.search {
+  height: 2rem;
+  width: 15rem;
+  padding: 1px;
+  text-align: center;
+  font-size: small;
+  border: 0.1em solid lightgray;
+  border-radius: 0.3em;
+}
+input::placeholder {
+  opacity: 0.5;
+  color: gray;
+}
+.page_input_details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1.5rem 1rem;
+}
+.page_input_details1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 1rem;
+  padding-bottom: 1.5rem;
+}
+.hrLine {
+  width: 100%;
+}
+.orrr {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.heading {
+  font-size: medium;
+  margin: 0;
+  padding: 0.5rem 1rem;
+  color: #42adfd;
+  display: flex;
+}
+.page {
+  background-color: white;
+  border-radius: 0.3em;
+}
+.or {
+  display: flex;
+}
+.btn {
+  height: 2rem;
+  width: 15rem;
+  padding: 1px;
+  color: white;
+  text-align: center;
+  font-size: small;
+  background-color: #42adfd;
+  border: 0;
+  border-radius: 0.3em;
+}
+hr {
+  margin: 0;
+  border-top: 0.1em solid lightgray;
+}
+.conditionImage {
+  height: 10rem;
+}
+.temperature {
+  margin: 0;
+  font-size: 4rem;
+}
+.celcius {
+  font-weight: 400;
+}
+.description {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: capitalize;
+  font-size: larger;
+  margin-bottom: 0.5em;
+}
+.description1 {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.details {
+  display: flex;
+  justify-content: space-around;
+  /* padding: 0.5em 1em; */
+  border-top: 0.1em solid lightgray;
+}
+.feels_like {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.7em 2em;
+}
+.humidity {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-left: 0.1em solid lightgray;
+  padding: 0.7em 2em;
+}
+.cls-1 {
+  fill: "none";
+}
+.tempFeels {
+  font-size: medium;
+  margin: 0;
+  margin-left: 0.3em;
+  font-weight: 500;
+}
+.textFeels {
+  font-size: x-small;
+  margin: 0;
+  margin-left: 0.3em;
+}
+.errorCenter {
+  display: flex;
+  padding: 0 2em 2em;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
