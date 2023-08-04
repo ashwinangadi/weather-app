@@ -2,16 +2,16 @@ import ReactDOM from "react-dom/client";
 import "./index.css";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import React from "react";
-import Home from "./Components/Home";
 import Weather from "./Components/Weather";
 import { AppProvider } from "./Context/AppContext";
 import RouteError from "./components/errorComponents/RouteError";
 import ApiError from "./components/errorComponents/ApiError";
+import App from "./App";
 
 export const appRouter = createBrowserRouter([
   {
     path: "/",
-    element: <Home />,
+    element: <App />,
     errorElement: <RouteError />,
   },
   {
