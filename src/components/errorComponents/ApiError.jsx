@@ -1,19 +1,10 @@
-import { Link } from "react-router-dom";
-import { leftArrow } from "../Utility/SVG";
+import { leftArrow } from "../../utility/SVG";
 import { useContext } from "react";
-import { AppContext } from "../Context/AppContext";
-import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
+import { AppContext } from "../../Context/AppContext";
 
 const ApiError = () => {
-  const navigate = useNavigate();
-  const { inputValue, weatherData } = useContext(AppContext);
-
-  if (weatherData?.cod === 200) {
-    return navigate("/widget");
-  }
-  if(!weatherData){
-    return <p>Issue with API</p>
-  }
+  const { cityName, weatherData } = useContext(AppContext);
 
   return (
     <div className="page ">
@@ -29,7 +20,7 @@ const ApiError = () => {
           {weatherData?.cod}
         </h1>
         <p style={{ fontSize: "2.5em", margin: "0" }}>
-          {inputValue} {weatherData?.message}
+          {cityName} {weatherData?.message}
         </p>
       </div>
     </div>

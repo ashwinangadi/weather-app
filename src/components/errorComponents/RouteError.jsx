@@ -1,5 +1,5 @@
 import { Link, useRouteError } from "react-router-dom";
-import { leftArrow } from "../Utility/SVG";
+import { leftArrow } from "../../utility/SVG";
 
 const RouteError = () => {
   const err = useRouteError();
@@ -14,7 +14,7 @@ const RouteError = () => {
       </h1>
       <hr />
       <div className="errorCenter">
-        <p>Try again</p>
+        <p style={{ fontSize: "1.5em", margin: "0" }}>Try again</p>
         <p style={{ fontSize: "1.5em", margin: "0" }}>{data}</p>
         <h1 style={{ fontSize: "10em", margin: "0", color: "red" }}>
           {status}

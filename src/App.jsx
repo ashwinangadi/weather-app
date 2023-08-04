@@ -1,15 +1,5 @@
-import "./App.css";
-import "./index.css";
-import InputPage from "./Components/inputPage";
+function App() {
+  return <div>App</div>;
+}
 
-
-const App = () => {
-
-  return (
-    <>
-      <InputPage />
-    </>
-  );
-};
-
-export default App
+export default App;
