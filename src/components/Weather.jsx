@@ -23,7 +23,7 @@ const Weather = () => {
         <hr />
         <div className="page_input_details1">
           <img
-            src={`icons/${weatherData?.weather[0]?.icon}.png`}
+            src={`https://openweathermap.org/img/wn/${weatherData?.weather[0]?.icon}@2x.png`}
             alt={`${weatherData?.weather[0]?.main} icon`}
             className="conditionImage"
           />

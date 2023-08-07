@@ -7,20 +7,22 @@ const AppProvider = ({ children }) => {
   const [cityName, setCityName] = useState("");
   const [weatherData, setWeatherData] = useState(null);
   const [loading, setLoading] = useState(false);
+  const [latLong, setLatLong] = useState({});
 
-  const getWeatherData = async (location) => {
+  // function to fetch API
+  const getWeatherData = async (latitude, longitude, location) => {
     let apiKey = import.meta.env.VITE_OPENWEATHER_API;
     setLoading(true);
     try {
       const data = await fetch(
-        `https://api.openweathermap.org/data/2.5/weather?units=metric&q=${location}&appid=${apiKey}`
+        `https://api.openweathermap.org/data/2.5/weather?units=metric&lat=${latitude}&lon=${longitude}&q=${location}&appid=${apiKey}`
       );
       const result = await data.json();
       setWeatherData(result);
-      return result
+      return result;
     } catch (error) {
       console.error("Error fetching weather data:", error);
-      return error
+      return error;
     } finally {
       setLoading(false);
     }
@@ -36,6 +38,8 @@ const AppProvider = ({ children }) => {
         cityName,
         setCityName,
         getWeatherData,
+        latLong,
+        setLatLong,
       }}
     >
       {children}
