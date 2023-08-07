@@ -18,9 +18,9 @@ The WeatherApp is a user-friendly and reliable weather application that allows u
  6. **Error Handling:** The application handles errors gracefully, providing clear error messages to users.
 
 ## Built With:
- - HTML
- - CSS
- - Javascript
+ - HTML5
+ - CSS3
+ - Javascript (ES6+)
  - ReactJS
  - React Router
  - Vite
