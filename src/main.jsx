@@ -15,7 +15,7 @@ export const appRouter = createBrowserRouter([
     errorElement: <RouteError />,
   },
   {
-    path: "/weather",
+    path: "/weather/:id",
     element: <Weather />,
     errorElement: <RouteError />,
   },

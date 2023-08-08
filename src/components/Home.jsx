@@ -13,7 +13,8 @@ const Home = () => {
     // API call with only city name
     const data = await getWeatherData("", "", cityName);
     if (data.cod === 200) {
-      return navigate("/weather");
+      console.log(data?.name)
+      return navigate(`/weather/${data?.name}`);
     } else {
       return navigate("/error");
     }
