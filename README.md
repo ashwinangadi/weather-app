@@ -1,4 +1,4 @@
-# Weather App -- HootBoard Assignment [Live Demo](https://weatherr-appp.web.app/)
+# Weather App [Live Demo](https://weatherr-appp.web.app/)
 
 #### ⛈ Weather app with OpenWeatherMap API.
 The WeatherApp is a user-friendly and reliable weather application that allows users to stay informed about weather conditions for any location of their choice. With a simple and intuitive interface, users can input their desired location and instantly access real-time weather information, including temperature, humidity and more. The app also features dynamic weather icons that visually represent the current weather condition. The WeatherApp provides accurate and up-to-date weather data to keep users informed and ready for any weather situation.
